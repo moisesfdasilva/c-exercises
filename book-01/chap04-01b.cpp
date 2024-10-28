@@ -2,11 +2,12 @@
 
 // pg 35 -> add count
 int main(){
-  int num[100];
+  int num[10];
   int count = 0;
   int totalnums;
 
   do {
+    if (count == 10) break;
     printf("\nEnter number (-999 to exit):");
     scanf("%d", &num[count]);
     count++;
