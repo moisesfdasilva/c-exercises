@@ -3,7 +3,7 @@
 
 int main(){
   char names[4][8] = { "moses", "moshe", "Moses", "Moshe" };
-  int i = 0, j;
+  int i, j;
 
   for(i = 0; i < 4; i++) {
     printf("  %s\n", names[i]);
