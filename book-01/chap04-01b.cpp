@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-// pg 35 -> add count
 int main(){
   int num[10];
   int count = 0;
