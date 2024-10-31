@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-float bonus(float salary, float years){
+float bonus(float salary, float years) {
 	float percent = 0.1;
 
 	if (years >= 5)
@@ -10,7 +10,7 @@ float bonus(float salary, float years){
 	return salary * percent;
 }
 
-int main(){
+int main() {
 	float salary, years;
 
 	printf("\n---Empresa XKW---\n");

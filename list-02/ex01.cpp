@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main(){
+int main() {
 	float num1, num2, num3, num4, avg;
 
 	printf("Digite a primeira nota:");

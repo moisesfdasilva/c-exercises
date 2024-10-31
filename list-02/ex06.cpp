@@ -5,7 +5,7 @@ int doble(int value) {
 	return value * 2;
 }
 
-int main(){
+int main() {
 	int num;
 
 	printf("\nDigite um valor inteiro:\n");

@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-float avg(float a, float b, float c, float d){
+float avg(float a, float b, float c, float d) {
 	return (a + b + c + d) / (float) 4;
 }
 
-int main(){
+int main() {
 	float num1, num2, num3, num4;
 
 	printf("Digite a primeira nota:");

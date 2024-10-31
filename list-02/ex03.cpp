@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main(){
+int main() {
 	float salary, years, bonus;
 
 	printf("\nEmpresa XKW\n");
