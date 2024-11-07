@@ -1,6 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+int double1(int a) {
+	return a * 2;
+}
+
 int main() {
 	int num;
 
@@ -8,7 +12,7 @@ int main() {
 	scanf("%d", &num);
 
 	if (num % 2 == 0)
-		printf("\n  %d\n", num * 2);
+		printf("\n  %d\n", double1(num));
 	else
 		printf("\n  Numero impar.\n");
 
