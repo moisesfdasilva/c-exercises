@@ -1,17 +1,19 @@
-// TO DO
-// #include<stdio.h>
-// #include<stdlib.h>
-// #include <math.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include <math.h>
 
-// int main(){
-//   float radius, volume;
+float volume(float rad) {
+  return M_PI * pow(rad, 3) * 4 / (float) 3;
+}
 
-// 	printf("Digite o raio da esfera:");
-// 	scanf("%f", &radius);
+int main() {
+  float radius;
 
-//   volume = 4/3 * M_PI * pow(radius, 3);
-// 	printf("Volume da esfera %.2f\n", volume);
+ 	printf("Digite o raio da esfera:");
+ 	scanf("%f", &radius);
 
-// 	system("pause");
-// 	return 0;
-// }
+ 	printf("Volume da esfera %.2f\n", volume(radius));
+
+ 	system("pause");
+ 	return 0;
+}
