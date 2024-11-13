@@ -1,20 +1,18 @@
 #include<stdio.h>
-#include<stdlib.h>
 
-int main(){
-  float t, vm;
+int main() {
+  float d, as;
 
-	printf("Digite o tempo gasto em horas:");
-	scanf("%f", &t);
-	printf("Digite a velocidade media:");
-	scanf("%f", &vm);
+	printf("Enter the duration in hours:");
+	scanf("%f", &d);
+	printf("Enter the average speed in km/h:");
+	scanf("%f", &as);
 
-	printf("Velocidade media: %.2f km/h\n", vm);
-	printf("Tempo gasto na viagem: %.2f horas\n", t);
-	printf("Distancia percorrida: %.2f km\n", t * vm);
-	printf("Quantidade de combustivel utilizada na viagem:");
-	printf(" %.2f litros\n", t * vm / 12);
+	printf("Average speed: %.2f km/h\n", as);
+	printf("Duration of travel: %.2f hours\n", d);
+	printf("Distance traveled: %.2f km\n", d * as);
+	printf("Fuel used:");
+	printf(" %.2f liters\n", d * as / 12);
 
-	system("pause");
 	return 0;
 }

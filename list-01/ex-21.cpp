@@ -1,24 +1,22 @@
 #include<stdio.h>
-#include<stdlib.h>
 
-int main(){
+int main() {
   int a, b;
 
-	printf("Digite primeiro valor inteiro:");
+	printf("Enter the first value:");
 	scanf("%d", &a);
-	printf("Digite segundo valor inteiro:");
+	printf("Enter the second value:");
 	scanf("%d", &b);
 
 	printf("%d + %d = %d\n", a, b, (a + b));
 	printf("%d - %d = %d\n", a, b, (a - b));
 	printf("%d . %d = %d\n", a, b, (a * b));
 	printf("%d / %d = ", a, b);
-	
-	if (b==0)
-		printf("indivisivel\n");
+
+	if (b == 0)
+		printf("indivisible\n");
 	else
 		printf("%.2f\n", a / (float)b);
 
-	system("pause");
 	return 0;
 }

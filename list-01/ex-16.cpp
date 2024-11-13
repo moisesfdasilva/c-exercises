@@ -1,18 +1,16 @@
 #include<stdio.h>
-#include<stdlib.h>
-#include <math.h>
+#include<math.h>
 
-int main(){
+int main() {
   int length1, length2, hyp;
 
-	printf("Digite o comprimento do primeiro lado do triangulo:");
+	printf("Enter the first length of the triangle:");
 	scanf("%d", &length1);
-	printf("Digite o comprimento do segundo lado do triangulo:");
+	printf("Enter the second length of the triangle:");
 	scanf("%d", &length2);
 
-  hyp = pow(length1, 2) + pow(length2, 2);
+  hyp = pow(pow(length1, 2) + pow(length2, 2), (float) 1 / 2);
 	printf("Hipotenusa do triangulo: %d\n", hyp);
 
-	system("pause");
 	return 0;
 }

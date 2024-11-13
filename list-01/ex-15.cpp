@@ -1,22 +1,20 @@
 #include<stdio.h>
-#include<stdlib.h>
 
-int main(){
+int main() {
 	float num1, num2, avg;
 
-	printf("Digite a primeira nota:");
+	printf("Enter first test score:");
 	scanf("%f", &num1);
-	printf("Digite a segunda nota:");
+	printf("Enter second test score:");
 	scanf("%f", &num2);
 
-	avg = (num1+num2)/2;
-	printf("\nA media aritmetica e %.2f\n", avg);
+	avg = (num1 + num2) / 2;
+	printf("\nThe average is %.2f\n", avg);
 
 	if (avg >= 6)
-		printf("\n APROVADO E MEDIA %.2f\n", avg);
+		printf("\n Approved with average %.2f\n", avg);
 	else
-		printf("\n REPROVADO E MEDIA %.2f\n", avg);
+		printf("\n Repproved with average %.2f\n", avg);
 
-	system("pause");
 	return 0;
 }
