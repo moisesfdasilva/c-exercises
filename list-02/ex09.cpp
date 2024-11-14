@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 int main() {
 	int num;
@@ -12,6 +11,5 @@ int main() {
 	else
 		printf("\n  Numero impar.\n");
 
-	system("pause");
 	return 0;
 }

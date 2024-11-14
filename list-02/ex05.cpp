@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 int main() {
 	int num;
@@ -9,6 +8,5 @@ int main() {
 
 	printf("O dobro desse valor:\n%d\n", num * 2);
 
-	system("pause");
 	return 0;
 }

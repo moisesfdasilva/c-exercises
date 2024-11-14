@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 int main() {
 	float salary, years, bonus;
@@ -17,6 +16,5 @@ int main() {
 
 	printf("Bonus salarial: R$ %.2f.\n", bonus);
 
-	system("pause");
 	return 0;
 }

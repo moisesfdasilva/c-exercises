@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 float avg(float a, float b, float c, float d) {
 	return (a + b + c + d) / (float) 4;
@@ -22,6 +21,5 @@ int main() {
 	else
 		printf("\nAluno Reprovado\n");
 
-	system("pause");
 	return 0;
 }

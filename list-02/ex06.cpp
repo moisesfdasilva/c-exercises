@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 int doble(int value) {
 	return value * 2;
@@ -13,6 +12,5 @@ int main() {
 
 	printf("O dobro desse valor:\n%d\n", doble(num));
 
-	system("pause");
 	return 0;
 }

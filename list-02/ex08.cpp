@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<math.h>
 
 int powOrRoot(int value) {
@@ -24,6 +23,5 @@ int main() {
 
 	printf("\n  %d\n", powOrRoot(num));
 
-	system("pause");
 	return 0;
 }

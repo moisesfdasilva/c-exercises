@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<math.h>
 
 int main() {
@@ -18,6 +17,5 @@ int main() {
 
 	printf("\n  %d\n", res);
 
-	system("pause");
 	return 0;
 }
