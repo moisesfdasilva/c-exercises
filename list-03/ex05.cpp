@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 int main() {
 	int max;
@@ -10,6 +9,5 @@ int main() {
 	for (int i = 1; i < max; i += 2)
 		printf("    %d\n", i);
 
-	system("pause");
 	return 0;
 }

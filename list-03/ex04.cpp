@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<math.h>
 
 int main() {
@@ -14,6 +13,5 @@ int main() {
 	for (i = 0; i < 10; i++)
 		printf("    %.lf\n", pow(num[i], 2));
 
-	system("pause");
 	return 0;
 }
