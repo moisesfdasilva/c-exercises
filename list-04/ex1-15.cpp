@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 float avg(float a, float b) {
 	return (a + b) / 2;
@@ -22,6 +21,5 @@ int main() {
 	else
 		printf("\n  REPROVADO E MEDIA %.2f\n", num[2]);
 
-	system("pause");
 	return 0;
 }

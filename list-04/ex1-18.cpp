@@ -1,6 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
-#include <math.h>
+#include<math.h>
 
 float volume(float rad) {
   return M_PI * pow(rad, 3) * 4 / (float) 3;
@@ -14,6 +13,5 @@ int main() {
 
  	printf("Volume da esfera %.2f\n", volume(radius));
 
- 	system("pause");
  	return 0;
 }

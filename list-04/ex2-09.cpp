@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 int double1(int a) {
 	return a * 2;
@@ -16,6 +15,5 @@ int main() {
 	else
 		printf("\n  Numero impar.\n");
 
-	system("pause");
 	return 0;
 }

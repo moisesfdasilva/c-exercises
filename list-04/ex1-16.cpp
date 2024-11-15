@@ -1,6 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
-#include <math.h>
+#include<math.h>
 
 double hyp(int a, int b) {
 	return pow(pow(a, 2) + pow(b, 2), (float) 1 / 2);
@@ -16,6 +15,5 @@ int main(){
 
 	printf("Hipotenusa do triangulo: %.1lf\n", hyp(length[0], length[1]));
 
-	system("pause");
 	return 0;
 }

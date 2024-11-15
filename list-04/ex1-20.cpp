@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 float distance(float a, float b) {
   return a * b;
@@ -23,6 +22,5 @@ int main() {
   printf("Quantidade de combustivel utilizada na viagem:");
   printf(" %.2f litros\n", fuel(t, vm));
 
-  system("pause");
   return 0;
 }

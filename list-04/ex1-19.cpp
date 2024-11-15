@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 int abc(int a, int b, int c) {
   int res = a;
@@ -25,6 +24,5 @@ int main() {
  	printf("novo valor de 'A': %d\n", a);
  	printf("novo valor de 'B': %d\n", b);
 
- 	system("pause");
  	return 0;
 }

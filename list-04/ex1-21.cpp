@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 
 int sum(int a, int b) {
   return a + b;
@@ -35,6 +34,5 @@ int main() {
   printf("%d . %d = %d\n", a, b, mul(a, b));
   printf("%d / %d = %.2f\n", a, b, div1(a, b));
 
-  system("pause");
   return 0;
 }
