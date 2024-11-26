@@ -12,13 +12,13 @@ float bonus(float salary, float years) {
 int main() {
 	float salary, years;
 
-	printf("\n---Empresa XKW---\n");
-	printf("Digite o salario, em reais:\n");
+	printf("\nXKW Company\n");
+	printf("Enter salary:\n");
 	scanf("%f", &salary);
-	printf("Digite quanto tempo de trabalho na empresa, em anos:\n");
+	printf("Enter the duration of your work here:\n");
 	scanf("%f", &years);
 
-	printf("Bonus salarial: R$ %.2f.\n", bonus(salary, years));
+	printf("Your bonus: R$ %.2f.\n", bonus(salary, years));
 
 	return 0;
 }

@@ -3,13 +3,13 @@
 int main() {
 	int num;
 
-	printf("\nDigite um numero inteiro:\n");
+	printf("\nEnter an integer value:\n");
 	scanf("%d", &num);
 
 	if (num % 2 == 0)
 		printf("\n  %d\n", num * 2);
 	else
-		printf("\n  Numero impar.\n");
+		printf("\n  Odd number.\n");
 
 	return 0;
 }

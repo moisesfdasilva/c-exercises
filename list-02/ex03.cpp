@@ -3,10 +3,10 @@
 int main() {
 	float salary, years, bonus;
 
-	printf("\nEmpresa XKW\n");
-	printf("Digite o salario, em reais:\n");
+	printf("\nXKW Company\n");
+	printf("Enter salary:\n");
 	scanf("%f", &salary);
-	printf("Digite quanto tempo de trabalho na empresa, em anos:\n");
+	printf("Enter the duration of your work here:\n");
 	scanf("%f", &years);
 
 	if (years >= 5)
@@ -14,7 +14,7 @@ int main() {
 	else
 		bonus = salary * 0.1;
 
-	printf("Bonus salarial: R$ %.2f.\n", bonus);
+	printf("Your bonus: $ %.2f.\n", bonus);
 
 	return 0;
 }

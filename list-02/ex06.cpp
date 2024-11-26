@@ -7,10 +7,10 @@ int doble(int value) {
 int main() {
 	int num;
 
-	printf("\nDigite um valor inteiro:\n");
+	printf("\nEnter an integer value:\n");
 	scanf("%d", &num);
 
-	printf("O dobro desse valor:\n%d\n", doble(num));
+	printf("Twice this value is:\n%d\n", doble(num));
 
 	return 0;
 }

@@ -7,19 +7,19 @@ float avg(float a, float b, float c, float d) {
 int main() {
 	float num1, num2, num3, num4;
 
-	printf("Digite a primeira nota:");
+	printf("Enter first test score:");
 	scanf("%f", &num1);
-	printf("Digite a segunda nota:");
+	printf("Enter second test score:");
 	scanf("%f", &num2);
-  printf("Digite a terceira nota:");
+  printf("Enter third test score:");
 	scanf("%f", &num3);
-	printf("Digite a quarta nota:");
+	printf("Enter fourth test score:");
 	scanf("%f", &num4);
 
 	if (avg(num1, num2, num3, num4) >= 7)
-		printf("\nAluno Aprovado\n");
+		printf("\nApproved\n");
 	else
-		printf("\nAluno Reprovado\n");
+		printf("\nNot approved\n");
 
 	return 0;
 }
