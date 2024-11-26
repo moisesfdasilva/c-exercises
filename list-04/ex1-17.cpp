@@ -7,10 +7,10 @@ float fahrenheit(float celsius) {
 int main(){
   float celsius;
 
-	printf("Digite a temperatura em graus Celsius:");
+	printf("Enter the temperature in Celsius degrees:");
 	scanf("%f", &celsius);
 
-	printf("Temperatura em Fahrenheit %.2f\n", fahrenheit(celsius));
+	printf("Temperature in Fahrenheit %.2f\n", fahrenheit(celsius));
 
 	return 0;
 }

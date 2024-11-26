@@ -7,19 +7,19 @@ float avg(float a, float b) {
 int main() {
 	float num[3];
 
-	printf("Digite a primeira nota:");
+	printf("Enter first test score:");
 	scanf("%f", &num[0]);
-	printf("Digite a segunda nota:");
+	printf("Enter second test score:");
 	scanf("%f", &num[1]);
 
 	num[2] = avg(num[0], num[1]);
 
-	printf("\n A media aritmetica e %.2f\n", num[2]);
+	printf("\nThe average is %.2f\n", num[2]);
 
 	if (num[2] >= 6)
-		printf("\n  APROVADO E MEDIA %.2f\n", num[2]);
+		printf("\n  Approved with average %.2f\n", num[2]);
 	else
-		printf("\n  REPROVADO E MEDIA %.2f\n", num[2]);
+		printf("\n  Repproved with average %.2f\n", num[2]);
 
 	return 0;
 }

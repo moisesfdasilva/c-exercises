@@ -12,17 +12,17 @@ int abc(int a, int b, int c) {
 int main() {
   int a, b, c;
 
- 	printf("Digite o valor da variavel 'A':");
+ 	printf("Enter the value of the variable 'A':");
  	scanf("%d", &a);
- 	printf("Digite o valor da variavel 'B':");
+ 	printf("Enter the value of the variable 'B':");
  	scanf("%d", &b);
 
   c = abc(a, b, 0);
   a = abc(a, b, 1);
   b = abc(c, b, 0);
 
- 	printf("novo valor de 'A': %d\n", a);
- 	printf("novo valor de 'B': %d\n", b);
+ 	printf("New value of 'A': %d\n", a);
+ 	printf("New value of 'B': %d\n", b);
 
  	return 0;
 }

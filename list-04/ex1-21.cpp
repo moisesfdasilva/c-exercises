@@ -24,9 +24,9 @@ float div1(int a, int b) {
 int main() {
   int a, b;
 
-  printf("Digite primeiro valor inteiro:");
+  printf("Enter the first value:");
   scanf("%d", &a);
-  printf("Digite segundo valor inteiro:");
+  printf("Enter the second value:");
   scanf("%d", &b);
 
   printf("%d + %d = %d\n", a, b, sum(a, b));

@@ -10,7 +10,7 @@ int main() {
 	scanf("%d", &length2);
 
   hyp = pow(pow(length1, 2) + pow(length2, 2), (float) 1 / 2);
-	printf("Hipotenusa do triangulo: %d\n", hyp);
+	printf("Hypotenuse of the triangle: %d\n", hyp);
 
 	return 0;
 }

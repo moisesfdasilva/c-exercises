@@ -8,10 +8,10 @@ float volume(float rad) {
 int main() {
   float radius;
 
- 	printf("Digite o raio da esfera:");
+ 	printf("Enter the radius of the sphere:");
  	scanf("%f", &radius);
 
- 	printf("Volume da esfera %.2f\n", volume(radius));
+ 	printf("Sphere volume is %.2f\n", volume(radius));
 
  	return 0;
 }

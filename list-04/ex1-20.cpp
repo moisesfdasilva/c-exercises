@@ -9,18 +9,18 @@ float fuel(float a, float b) {
 }
 
 int main() {
-  float t, vm;
+  float t, as;
 
- 	printf("Digite o tempo gasto em horas:");
+ 	printf("Enter the duration in hours:");
  	scanf("%f", &t);
- 	printf("Digite a velocidade media(km/h):");
- 	scanf("%f", &vm);
+ 	printf("Enter the average speed in km/h:");
+ 	scanf("%f", &as);
 
- 	printf("Velocidade media: %.2f km/h\n", vm);
-  printf("Tempo gasto na viagem: %.2f horas\n", t);
-  printf("Distancia percorrida: %.2f km\n", distance(t, vm));
-  printf("Quantidade de combustivel utilizada na viagem:");
-  printf(" %.2f litros\n", fuel(t, vm));
+ 	printf("Average speed: %.2f km/h\n", as);
+  printf("Duration of travel: %.2f hours\n", t);
+  printf("Distance traveled: %.2f km\n", distance(t, as));
+  printf("Fuel used:");
+  printf(" %.2f liters\n", fuel(t, as));
 
   return 0;
 }

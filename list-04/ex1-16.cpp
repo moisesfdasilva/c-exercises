@@ -8,12 +8,12 @@ double hyp(int a, int b) {
 int main(){
   int length[2];
 
-	printf("Digite o comprimento do primeiro lado do triangulo:");
+	printf("Enter the first length of the triangle:");
 	scanf("%d", &length[0]);
-	printf("Digite o comprimento do segundo lado do triangulo:");
+	printf("Enter the second length of the triangle:");
 	scanf("%d", &length[1]);
 
-	printf("Hipotenusa do triangulo: %.1lf\n", hyp(length[0], length[1]));
+	printf("Hypotenuse of the triangle: %.1lf\n", hyp(length[0], length[1]));
 
 	return 0;
 }
