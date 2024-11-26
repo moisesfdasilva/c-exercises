@@ -5,7 +5,7 @@ int main() {
 	int i = 0, num[10];
 
 	do {
-		printf("Digite %do numero:\n", i + 1);
+		printf("Enter an integer number(%d):\n", i + 1);
 		scanf("%d", &num[i]);
 		i++;
 	} while(i < 10);
