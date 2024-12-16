@@ -3,30 +3,79 @@
 
 int conversion2() {
   char romanNumeral[60];
-  int number = 0, i = 0;
+  int number = 0, previous = 0, i = 0;
 
-  printf("\n  Digite o numero:\n");
+  printf("\n  Digite o numero em algarismo romano:\n");
   scanf("%s", &romanNumeral);
 
   switch (romanNumeral[i]) {
     case 'M':
-      number += 1000;
+      if (previous == 100) {
+        number += 800;
+      } else if (previous == 0 || previous == 1000) {
+        number += 1000;
+      } else {
+        printf("ERROR");
+      }
+      break;
+    case 'D':
+      if (previous == 100) {
+        number += 300;
+      } else if (previous == 0 || previous == 1000) {
+        number += 500;
+      } else {
+        printf("ERROR");
+      }
       break;
     case 'C':
-      if (romanNumeral[i + 1] == 'M') {
-        number += 900;
-      } else if (romanNumeral[i + 1] == 'D') {
-        number += 400;
+      if (previous == 10) {
+        number += 80;
+      } else if (previous == 0 || previous == 1000 || previous == 500 || previous == 100) {
+        number += 10;
+      } else {
+        printf("ERROR");
+      }
+      break;
+    case 'L':
+      if (previous == 10) {
+        number += 30;
+      } else if (previous == 0 || previous == 1000 || previous == 500 || previous == 100) {
+        number += 10;
+      } else {
+        printf("ERROR");
       }
       break;
     case 'X':
+      if (previous == 1) {
+        number += 8;
+      } else if (previous == 0 || previous == 1000 || previous == 500 || previous == 100 || previous == 50 || previous == 10) {
+        number += 10;
+      } else {
+        printf("ERROR");
+      }
+      break;
+    case 'V':
+      if (previous == 1) {
+        number += 3;
+      } else if (previous == 0 || previous == 1000 || previous == 500 || previous == 100 || previous == 50 || previous == 10) {
+        number += 10;
+      } else {
+        printf("ERROR");
+      }
       break;
     case 'I':
+      if (previous == 0 || previous == 1000 || previous == 500 || previous == 100 || previous == 50 || previous == 10 || previous == 5 || previous == 1) {
+        number += 1;
+      } else {
+        printf("ERROR");
+      }
       break;
     default:
-      //ERROR
+      printf("ERROR");
       break;
   }
+
+  previous = romanNumeral[i];
 
   return 0;
 }
