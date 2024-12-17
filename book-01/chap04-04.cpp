@@ -10,7 +10,7 @@ int main(){
 
   size = strlen(str);
 
-  printf("\nLenght of name: %d.\n", size - 1);
+  printf("\nLenght of name: %d.\n", size);
 
   return 0;
 }

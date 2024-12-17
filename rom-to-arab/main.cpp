@@ -3,79 +3,85 @@
 
 int conversion2() {
   char romanNumeral[60];
-  int number = 0, previous = 0, i = 0;
+  int number = 0;
+  char previous = '0';
 
   printf("\n  Digite o numero em algarismo romano:\n");
   scanf("%s", &romanNumeral);
 
-  switch (romanNumeral[i]) {
-    case 'M':
-      if (previous == 100) {
-        number += 800;
-      } else if (previous == 0 || previous == 1000) {
-        number += 1000;
-      } else {
+  for(int i = 0; i < (int) strlen(romanNumeral); i++) {
+    switch (romanNumeral[i]) {
+      case 'M':
+        if (previous == 'C') {
+          number += 800;
+        } else if (previous == '0' || previous == 'M') {
+          number += 1000;
+        } else {
+          printf("ERROR-1 \n");
+        }
+        break;
+      case 'D':
+        if (previous == 'C') {
+          number += 300;
+        } else if (previous == '0' || previous == 'M') {
+          number += 500;
+        } else {
+          printf("ERROR-2 \n");
+        }
+        break;
+      case 'C':
+        if (previous == 'X') {
+          number += 80;
+        } else if (previous == '0' || previous == 'M' || previous == 'D' || previous == 'C') {
+          number += 100;
+        } else {
+          printf("ERROR-3 \n");
+        }
+        break;
+      case 'L':
+        if (previous == 'X') {
+          number += 30;
+        } else if (previous == '0' || previous == 'M' || previous == 'D' || previous == 'C') {
+          number += 50;
+        } else {
+          printf("ERROR");
+        }
+        break;
+      case 'X':
+        if (previous == 1) {
+          number += 8;
+        } else if (previous == '0' || previous == 'M' || previous == 'D' || previous == 'C' || previous == 'L' || previous == 'X') {
+          number += 10;
+        } else {
+          printf("ERROR");
+        }
+        break;
+      case 'V':
+        if (previous == 1) {
+          number += 3;
+        } else if (previous == '0' || previous == 'M' || previous == 'D' || previous == 'C' || previous == 'L' || previous == 'X') {
+          number += 5;
+        } else {
+          printf("ERROR");
+        }
+        break;
+      case 'I':
+        if (previous == '0' || previous == 'M' || previous == 'D' || previous == 'C' || previous == 'L' || previous == 'X' || previous == 'V' || previous == 'I') {
+          number += 1;
+        } else {
+          printf("ERROR");
+        }
+        break;
+      default:
         printf("ERROR");
-      }
-      break;
-    case 'D':
-      if (previous == 100) {
-        number += 300;
-      } else if (previous == 0 || previous == 1000) {
-        number += 500;
-      } else {
-        printf("ERROR");
-      }
-      break;
-    case 'C':
-      if (previous == 10) {
-        number += 80;
-      } else if (previous == 0 || previous == 1000 || previous == 500 || previous == 100) {
-        number += 10;
-      } else {
-        printf("ERROR");
-      }
-      break;
-    case 'L':
-      if (previous == 10) {
-        number += 30;
-      } else if (previous == 0 || previous == 1000 || previous == 500 || previous == 100) {
-        number += 10;
-      } else {
-        printf("ERROR");
-      }
-      break;
-    case 'X':
-      if (previous == 1) {
-        number += 8;
-      } else if (previous == 0 || previous == 1000 || previous == 500 || previous == 100 || previous == 50 || previous == 10) {
-        number += 10;
-      } else {
-        printf("ERROR");
-      }
-      break;
-    case 'V':
-      if (previous == 1) {
-        number += 3;
-      } else if (previous == 0 || previous == 1000 || previous == 500 || previous == 100 || previous == 50 || previous == 10) {
-        number += 10;
-      } else {
-        printf("ERROR");
-      }
-      break;
-    case 'I':
-      if (previous == 0 || previous == 1000 || previous == 500 || previous == 100 || previous == 50 || previous == 10 || previous == 5 || previous == 1) {
-        number += 1;
-      } else {
-        printf("ERROR");
-      }
-      break;
-    default:
-      printf("ERROR");
-      break;
+        break;
+    }
+
+    previous = romanNumeral[i];
+
   }
 
-  previous = romanNumeral[i];
+  printf("%d \n", number);
 
   return 0;
 }
