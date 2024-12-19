@@ -44,36 +44,36 @@ int conversion2() {
         } else if (previous == '0' || previous == 'M' || previous == 'D' || previous == 'C') {
           number += 50;
         } else {
-          printf("ERROR");
+          printf("ERROR-4");
         }
         break;
       case 'X':
-        if (previous == 1) {
+        if (previous == 'I') {
           number += 8;
         } else if (previous == '0' || previous == 'M' || previous == 'D' || previous == 'C' || previous == 'L' || previous == 'X') {
           number += 10;
         } else {
-          printf("ERROR");
+          printf("ERROR-5");
         }
         break;
       case 'V':
-        if (previous == 1) {
+        if (previous == 'I') {
           number += 3;
         } else if (previous == '0' || previous == 'M' || previous == 'D' || previous == 'C' || previous == 'L' || previous == 'X') {
           number += 5;
         } else {
-          printf("ERROR");
+          printf("ERROR-6");
         }
         break;
       case 'I':
         if (previous == '0' || previous == 'M' || previous == 'D' || previous == 'C' || previous == 'L' || previous == 'X' || previous == 'V' || previous == 'I') {
           number += 1;
         } else {
-          printf("ERROR");
+          printf("ERROR-7");
         }
         break;
       default:
-        printf("ERROR");
+        printf("ERROR-8");
         break;
     }
 
